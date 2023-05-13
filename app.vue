@@ -1,6 +1,6 @@
 <template>
   <div class="d-flex align-center flex-column -p-4">
-    <p class="-font-bold font-bold -underline underline">Bold text</p>
+    <p class="-underline underline">Underlined text</p>
     <v-icon class="-relative">mdi-home</v-icon>
     <v-card class="-px-4">
       <v-card-title>This is a title</v-card-title>
