@@ -1,5 +1,8 @@
 import { setup } from '@storybook/vue3'
-// import MyPlugin from 'example-vue-plugin'
+import 'vuetify/styles'
+import { createVuetify } from 'vuetify'
+import * as components from 'vuetify/components'
+import * as directives from 'vuetify/directives'
 
 /** @type { import('@storybook/vue3').Preview } */
 const preview = {
@@ -14,10 +17,13 @@ const preview = {
   },
 }
 
-// setup((app) => {
-//   app.use(MyPlugin, {
-//     secret: import.meta.env.STORYBOOK_PLUGIN_SECRET,
-//   })
-// })
+const vuetify = createVuetify({
+  components,
+  directives,
+})
+
+setup((app) => {
+  app.use(vuetify, {})
+})
 
 export default preview
