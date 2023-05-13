@@ -8,6 +8,7 @@
     </v-card>
     <v-btn class="mt-10">Hello Sass Changes</v-btn>
   </div>
+  <MyComponent />
 </template>
 
 <style lang="scss">

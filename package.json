@@ -6,12 +6,26 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.6.8",
+    "@storybook/addon-essentials": "7.0.11",
+    "@storybook/addon-interactions": "7.0.11",
+    "@storybook/addon-links": "7.0.11",
+    "@storybook/blocks": "7.0.11",
+    "@storybook/testing-library": "0.0.14-next.2",
+    "@storybook/vue3": "7.0.11",
+    "@storybook/vue3-vite": "7.0.11",
     "@types/node": "^18",
-    "nuxt": "^3.4.3"
+    "nuxt": "^3.4.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "storybook": "7.0.11",
+    "unplugin-auto-import": "^0.15.3",
+    "unplugin-vue-components": "^0.24.1"
   },
   "dependencies": {
     "@mdi/font": "^7.2.96",
