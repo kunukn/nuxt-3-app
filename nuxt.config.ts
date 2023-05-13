@@ -11,12 +11,15 @@ export default defineNuxtConfig({
   build: {
     transpile: ['vuetify'],
   },
+
   modules: ['@nuxtjs/tailwindcss'],
 
+  // https://tailwindcss.nuxtjs.org/getting-started/options
+  // @ts-ignore
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',
     configPath: 'tailwind.config',
-    exposeConfig: false,
+    exposeConfig: true,
     exposeLevel: 2,
     // @ts-ignore
     config: {},

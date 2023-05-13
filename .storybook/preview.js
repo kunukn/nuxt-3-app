@@ -1,4 +1,5 @@
 import { setup } from '@storybook/vue3'
+import '../assets/css/tailwind.css';
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
