@@ -1,5 +1,5 @@
 import { setup } from '@storybook/vue3'
-import './tailwind.css';
+import '../assets/css/tailwind.css'
 import '@mdi/font/css/materialdesignicons.min.css';
 import 'vuetify/lib/styles/main.sass';
 import 'vuetify/styles'
