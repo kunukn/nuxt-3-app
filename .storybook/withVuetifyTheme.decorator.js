@@ -1,3 +1,5 @@
+// https://storybook.js.org/recipes/vuetify
+
 import { h } from 'vue'
 import StoryWrapper from './StoryWrapper.vue'
 

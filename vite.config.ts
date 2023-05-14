@@ -7,6 +7,10 @@ import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  // https://vitejs.dev/config/shared-options.html#base
+  base: './',
+  // https://vitejs.dev/config/shared-options.html#define
+  define: { 'process.env': {} },
   plugins: [
     // Vue3
     // vue({
@@ -19,7 +23,7 @@ export default defineConfig({
     // // https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vite-plugin#vite-plugin-vuetify
     // vuetify({
     //   autoImport: true,
-    //   styles: { configFile: './assets/styles/vuetify-settings' },
+    //   styles: { configFile: 'assets/styles/vuetify-settings' },
     // }),
     AutoImport({
       imports: ['vue', 'vue-router'],
