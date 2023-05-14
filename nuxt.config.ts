@@ -7,6 +7,7 @@ export default defineNuxtConfig({
   css: [
     'vuetify/lib/styles/main.sass',
     '@mdi/font/css/materialdesignicons.min.css',
+    // './assets/styles/_colors.scss',
   ],
   build: {
     transpile: ['vuetify'],
@@ -32,7 +33,7 @@ export default defineNuxtConfig({
       // @ts-ignore
       config.plugins.push(
         vuetify({
-          styles: { configFile: resolve('./settings.scss') },
+          styles: { configFile: resolve('./assets/styles/vuetify-settings.scss') },
         })
       )
     },

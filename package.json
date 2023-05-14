@@ -3,14 +3,20 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxt dev --port 8084",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
+    "story": "storybook dev -p 6009",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
+  "dependencies": {
+    "nuxt": "^3.4.3",
+    "vuetify": "^3.2.4"
+  },
   "devDependencies": {
+    "@mdi/font": "^7.2.96",
     "@nuxtjs/tailwindcss": "^6.6.8",
     "@storybook/addon-essentials": "7.0.11",
     "@storybook/addon-interactions": "7.0.11",
@@ -18,23 +24,19 @@
     "@storybook/addon-postcss": "^2.0.0",
     "@storybook/addon-styling": "^1.0.8",
     "@storybook/blocks": "7.0.11",
-    "@storybook/testing-library": "0.0.14-next.2",
+    "@storybook/testing-library": "0.1.0",
     "@storybook/vue3": "7.0.11",
     "@storybook/vue3-vite": "7.0.11",
     "@types/node": "^18",
+    "@vitejs/plugin-vue": "^4.2.3",
     "autoprefixer": "^10.4.14",
-    "nuxt": "^3.4.3",
     "postcss": "^8.4.23",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "sass": "^1.62.1",
     "storybook": "7.0.11",
     "unplugin-auto-import": "^0.15.3",
-    "unplugin-vue-components": "^0.24.1"
-  },
-  "dependencies": {
-    "@mdi/font": "^7.2.96",
-    "sass": "^1.62.1",
-    "vite-plugin-vuetify": "^1.0.2",
-    "vuetify": "^3.2.4"
+    "unplugin-vue-components": "^0.24.1",
+    "vite-plugin-vuetify": "^1.0.2"
   }
 }
