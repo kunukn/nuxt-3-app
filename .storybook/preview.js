@@ -1,5 +1,4 @@
 import { setup } from '@storybook/vue3'
-import '../assets/css/tailwind.css'
 import '@mdi/font/css/materialdesignicons.min.css'
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
@@ -7,6 +6,8 @@ import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
 import { withVuetifyTheme } from './withVuetifyTheme.decorator'
 import { themes } from '../configuration/vuetify-configuration'
+import '../assets/css/tailwind.css'
+// import '../assets/styles/vuetify-settings.scss'
 
 /** @type { import('@storybook/vue3').Preview } */
 const preview = {
