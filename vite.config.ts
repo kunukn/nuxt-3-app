@@ -7,13 +7,8 @@ import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // https://vitejs.dev/config/shared-options.html#base
-  base: './',
-  // https://vitejs.dev/config/shared-options.html#define
-  define: { 'process.env': {} },
   plugins: [
-    // Vue3
-    // vue({
+    // vue({ // Vue3
     //   template: {
     //     // https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vite-plugin#image-loading
     //     transformAssetUrls,
@@ -39,15 +34,15 @@ export default defineConfig({
       directoryAsNamespace: true,
     }),
   ],
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: `
-          @import "./assets/styles/_colors.scss";
-        `,
-      },
-    },
-  },
+  // css: {
+  //   preprocessorOptions: {
+  //     scss: {
+  //       additionalData: `
+  //         @import "./assets/styles/_colors.scss";
+  //       `,
+  //     },
+  //   },
+  // },
   resolve: {
     alias: {
       '~': fileURLToPath(new URL('./', import.meta.url)),
