@@ -1,6 +1,3 @@
-// import path from 'path'
-// import { loadConfigFromFile, mergeConfig } from 'vite'
-
 /** @type { import('@storybook/vue3-vite').StorybookConfig } */
 
 const config = {

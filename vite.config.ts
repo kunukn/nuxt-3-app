@@ -5,11 +5,13 @@ import Components from 'unplugin-vue-components/vite'
 import vue from '@vitejs/plugin-vue'
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 
-console.log(process.env)
+console.log('process.env', process.env)
 
 // https://vitejs.dev/config/
 let definedConfig = process.env.NUXT_ENV
-  ? {}
+  ? {
+      /* Nuxt detects vite.config.ts file, avoid using it. This is for Storybook. */
+    }
   : defineConfig({
       plugins: [
         vue({
@@ -38,6 +40,15 @@ let definedConfig = process.env.NUXT_ENV
           directoryAsNamespace: true,
         }),
       ],
+      css: {
+        // preprocessorOptions: {
+        //   scss: {
+        //     additionalData: `
+        //       @import "./path/to/file.scss";
+        //     `
+        //   }
+        // }
+      },
       resolve: {
         alias: {
           '~': fileURLToPath(new URL('./', import.meta.url)),

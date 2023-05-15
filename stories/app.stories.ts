@@ -1,6 +1,6 @@
 // https://laurentcazanove.com/articles/storybook-nuxt-guide/
 import { Meta, StoryObj } from '@storybook/vue3'
-import App from '~/App.vue' // Imported with '~' shorthand syntax
+import App from '~/components/AppContent.vue'
 
 const meta: Meta<typeof App> = {
   component: App,

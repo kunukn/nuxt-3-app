@@ -1,7 +1,7 @@
 import vuetify from 'vite-plugin-vuetify'
 import { createResolver } from '@nuxt/kit'
 
-process.env.NUXT_ENV = 'true'
+process.env.NUXT_ENV = 'true' // used as a flag to avoid using the vite.config.ts file.
 
 const { resolve } = createResolver(import.meta.url)
 
@@ -11,6 +11,7 @@ export default defineNuxtConfig({
   css: [
     'vuetify/lib/styles/main.sass',
     '@mdi/font/css/materialdesignicons.min.css',
+    '~/assets/styles/global.scss',
   ],
   build: {
     transpile: ['vuetify'],
