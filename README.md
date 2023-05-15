@@ -1,6 +1,4 @@
-# Nuxt 3 Minimal Starter
-
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+# Nuxt 3 + Vuetify customized + Tailwind + Storybook
 
 ## Setup
 
@@ -19,10 +17,14 @@ pnpm install
 
 ## Development Server
 
-Start the development server on `http://localhost:3000`
-
 ```bash
 npm run dev
+```
+
+## Development Storybook
+
+```bash
+npm run storybook
 ```
 
 ## Production
@@ -37,6 +39,12 @@ Locally preview production build:
 
 ```bash
 npm run preview
+```
+
+Build the application for HTML pre-generated production:
+
+```bash
+npm run generate
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
