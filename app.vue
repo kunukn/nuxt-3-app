@@ -1,8 +1,6 @@
 <template>
   <v-app>
-    <v-main>
-      <AppContent />
-    </v-main>
+    <AppContent />
   </v-app>
 </template>
 

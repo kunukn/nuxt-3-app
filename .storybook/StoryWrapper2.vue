@@ -1,6 +1,8 @@
 <template>
   <v-app :theme="themeName">
-    <slot name="story"></slot>
+    <v-main>
+      <slot name="story"></slot>
+    </v-main>
   </v-app>
 </template>
 
