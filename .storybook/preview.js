@@ -7,7 +7,6 @@ import * as directives from 'vuetify/directives'
 import { withVuetifyTheme } from './withVuetifyTheme.decorator'
 import { themes } from '../configuration/vuetify-configuration'
 import '../assets/css/tailwind.css'
-// import '../settings.scss'
 
 /** @type { import('@storybook/vue3').Preview } */
 const preview = {
@@ -54,5 +53,3 @@ export const globalTypes = {
     },
   },
 }
-
-// export default preview

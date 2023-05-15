@@ -20,22 +20,6 @@ const config = {
   docs: {
     autodocs: 'tag',
   },
-
-  // // https://storybook.js.org/docs/react/builders/vite
-  // // https://laurentcazanove.com/articles/storybook-nuxt-guide/
-  // async viteFinal(baseConfig) {
-  //   // @ts-ignore
-  //   const { config: userConfig } = await loadConfigFromFile()
-  //   // @ts-ignore
-  //    path.resolve(__dirname, '../vite.config.ts')
-
-  //   let merged = mergeConfig(baseConfig, userConfig)
-
-  //   console.log('merged', merged)
-  //   console.log('userConfig', userConfig)
-
-  //   return merged
-  // },
 }
 
 export default config
