@@ -17,6 +17,10 @@
   </v-app>
 </template>
 
+
+<script lang="ts">
+</script>
+
 <style lang="scss">
 // @use './settings.scss';
 </style>
