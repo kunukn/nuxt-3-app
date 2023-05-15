@@ -33,7 +33,7 @@ export default defineNuxtConfig({
       // @ts-ignore
       config.plugins.push(
         vuetify({
-          styles: { configFile: resolve('./assets/styles/vuetify-settings.scss') },
+          styles: { configFile: resolve('./settings.scss') },
         })
       )
     },

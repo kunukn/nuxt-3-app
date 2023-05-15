@@ -18,5 +18,5 @@
 </template>
 
 <style lang="scss">
-// @use './assets/styles/vuetify-settings.scss';
+// @use './settings.scss';
 </style>

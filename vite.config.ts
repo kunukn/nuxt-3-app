@@ -18,7 +18,7 @@ export default defineConfig({
     // // https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vite-plugin#vite-plugin-vuetify
     // vuetify({
     //   autoImport: true,
-    //   styles: { configFile: 'assets/styles/vuetify-settings' },
+    //   styles: { configFile: 'settings.scss' },
     // }),
     AutoImport({
       imports: ['vue', 'vue-router'],

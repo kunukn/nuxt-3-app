@@ -7,7 +7,7 @@ import * as directives from 'vuetify/directives'
 import { withVuetifyTheme } from './withVuetifyTheme.decorator'
 import { themes } from '../configuration/vuetify-configuration'
 import '../assets/css/tailwind.css'
-// import '../assets/styles/vuetify-settings.scss'
+// import '../settings.scss'
 
 /** @type { import('@storybook/vue3').Preview } */
 const preview = {
