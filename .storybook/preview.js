@@ -3,6 +3,7 @@ import '@mdi/font/css/materialdesignicons.min.css'
 import 'vuetify/styles'
 import '../assets/css/tailwind.css'
 import { createVuetify } from 'vuetify'
+import { createPinia } from 'pinia'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
 import { withVuetifyTheme } from './withVuetifyTheme.decorator'
@@ -30,8 +31,11 @@ const vuetify = createVuetify({
   },
 })
 
+const pinia = createPinia()
+
 setup((app) => {
   app.use(vuetify, {})
+  app.use(pinia)
 })
 
 export const decorators = [withVuetifyTheme]

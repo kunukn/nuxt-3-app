@@ -1,5 +1,6 @@
 module.exports = {
   prefix: '-',
+  mode: 'jit',
   content: [
     './stories/**/*.{js,vue,ts}',
     './components/**/*.{js,vue,ts}',
