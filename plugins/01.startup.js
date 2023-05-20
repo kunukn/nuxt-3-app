@@ -1,3 +1,3 @@
 export default defineNuxtPlugin((nuxtApp) => {
-    console.debug('*** startup', Date.now())
+  console.debug('*** startup', Date.now())
 })
