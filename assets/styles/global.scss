@@ -17,3 +17,15 @@ body {
   text-rendering: optimizeLegibility;
   position: relative;
 }
+
+[data-layout='default'] {
+  flex: 1;
+}
+
+[data-layout='full'] {
+  flex: 1;
+}
+
+[data-layout='menu'] {
+  flex: 1;
+}

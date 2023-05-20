@@ -1,6 +1,8 @@
 <template>
   <v-app>
-    <AppContent />
+    <div data-layout="app">
+      <NuxtPage />
+    </div>
   </v-app>
 </template>
 
