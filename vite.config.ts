@@ -8,7 +8,7 @@ import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 console.log('process.env', process.env)
 
 // https://vitejs.dev/config/
-let definedConfig = process.env.NUXT_ENV
+const definedConfig = process.env.NUXT_ENV
   ? {
       /* Nuxt detects vite.config.ts file, avoid using it. This is for Storybook. */
     }
