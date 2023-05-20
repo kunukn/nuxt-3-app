@@ -1,11 +1,5 @@
 <template>
   <v-app>
-    <div data-layout="app">
-      <NuxtPage />
-    </div>
+    <NuxtPage />
   </v-app>
 </template>
-
-<style lang="scss">
-// @use './settings.scss';
-</style>
