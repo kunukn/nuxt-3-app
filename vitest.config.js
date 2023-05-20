@@ -8,7 +8,7 @@ export default defineConfig({
     globals: true,
     environment: 'happy-dom',
     deps: {
-      inline: ['element-plus'],
+      inline: ['element-plus', 'vuetify'],
     },
     include: ['./components/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
     exclude: [
@@ -20,6 +20,7 @@ export default defineConfig({
       '**/{karma,rollup,webpack,vite,vitest,jest,ava,babel,nyc,cypress,tsup,build}.config.*',
     ],
   },
+  setupFiles: 'vuetify.config.js',
   resolve: {
     alias: {
       '~': fileURLToPath(new URL('./', import.meta.url)),

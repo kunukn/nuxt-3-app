@@ -1,5 +1,6 @@
 <template>
   <p>Dummy component</p>
+  <v-btn> Button </v-btn>
 </template>
 
 <script>
