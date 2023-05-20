@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [...vitePlugins],
   test: {
     globals: true,
-    environment: 'jsdom',
+    environment: 'happy-dom',
     deps: {
       inline: ['element-plus'],
     },
