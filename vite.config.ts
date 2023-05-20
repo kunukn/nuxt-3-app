@@ -1,9 +1,6 @@
 import { URL, fileURLToPath } from 'node:url'
 import { defineConfig } from 'vite'
-import AutoImport from 'unplugin-auto-import/vite'
-import Components from 'unplugin-vue-components/vite'
-import vue from '@vitejs/plugin-vue'
-import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
+import { vitePlugins } from './vite.plugins'
 
 console.log('process.env', process.env)
 
@@ -13,33 +10,7 @@ const definedConfig = process.env.NUXT_ENV
       /* Nuxt detects vite.config.ts file, avoid using it. This is for Storybook. */
     }
   : defineConfig({
-      plugins: [
-        vue({
-          template: {
-            // https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vite-plugin#image-loading
-            transformAssetUrls,
-          },
-        }),
-        // Vuetify Loader
-        // https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vite-plugin#vite-plugin-vuetify
-        vuetify({
-          autoImport: true,
-          styles: { configFile: 'settings.scss' },
-        }),
-        AutoImport({
-          imports: ['vue', 'vue-router'],
-          dirs: ['./composables'],
-          vueTemplate: true,
-        }),
-        Components({
-          dirs: [
-            './components/',
-            // Component folders that should be auto-imported
-          ],
-          dts: true,
-          directoryAsNamespace: true,
-        }),
-      ],
+      plugins: [...vitePlugins],
       css: {
         // preprocessorOptions: {
         //   scss: {
