@@ -19,7 +19,6 @@
       </v-card>
       <v-btn class="mt-10 -font-bold">Hello Sass Changes</v-btn>
       <MyComponent />
-      <v-btn>clicky click</v-btn>
     </div>
   </v-main>
 </template>

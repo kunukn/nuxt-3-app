@@ -17,6 +17,7 @@
     "lintfix": "prettier --write --list-different . && yarn lint:js --fix"
   },
   "dependencies": {
+    "@pinia/nuxt": "^0.4.11",
     "nuxt": "^3.4.3",
     "vuetify": "^3.2.4"
   },

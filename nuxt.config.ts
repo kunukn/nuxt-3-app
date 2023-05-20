@@ -17,7 +17,7 @@ export default defineNuxtConfig({
     transpile: ['vuetify'],
   },
 
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt'],
 
   // https://tailwindcss.nuxtjs.org/getting-started/options
   // @ts-ignore
