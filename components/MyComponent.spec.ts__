@@ -1,0 +1,19 @@
+import { describe, it, expect } from 'vitest'
+import { createTestingPinia } from '@pinia/testing'
+import { mount } from '@vue/test-utils'
+import VueComponent from './MyComponent.vue'
+import { useCounterStore } from '@/stores/counter'
+
+describe('MyComponent', () => {
+  it('is a Vue instance', () => {
+    const wrapper = mount(VueComponent, {
+      global: {
+        plugins: [createTestingPinia({ stubActions: true })],
+      },
+    })
+
+    // const store = useCounterStore() // uses the testing pinia
+
+    expect(wrapper.vm).toBeTruthy()
+  })
+})

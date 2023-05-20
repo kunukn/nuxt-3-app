@@ -34,7 +34,7 @@ const vuetify = createVuetify({
 const pinia = createPinia()
 
 setup((app) => {
-  app.use(vuetify, {})
+  app.use(vuetify)
   app.use(pinia)
 })
 

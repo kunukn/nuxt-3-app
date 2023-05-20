@@ -11,6 +11,6 @@ module.exports = {
   parserOptions: {
     parser: '@typescript-eslint/parser',
   },
-  plugins: [],
+  plugins: ['vitest'],
   rules: {},
 }
