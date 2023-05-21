@@ -1,12 +1,9 @@
 import { createVuetify } from 'vuetify'
-import * as components from 'vuetify/components'
-import * as directives from 'vuetify/directives'
 import { themes } from '~/configuration/vuetify-configuration'
 
 export default defineNuxtPlugin((nuxtApp) => {
+  // https://vuetifyjs.com/en/features/treeshaking/
   const vuetify = createVuetify({
-    components,
-    directives,
     theme: {
       themes,
     },
