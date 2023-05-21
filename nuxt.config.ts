@@ -9,7 +9,7 @@ export default defineNuxtConfig({
   runtimeConfig: {},
   env: {},
   css: [
-    'vuetify/lib/styles/main.sass',
+    'vuetify/lib/styles/main.sass', // instead of: import 'vuetify/styles'
     '@mdi/font/css/materialdesignicons.min.css',
     '~/assets/styles/global.scss',
   ],

@@ -2,7 +2,7 @@ import { URL, fileURLToPath } from 'node:url'
 import { defineConfig } from 'vite'
 import { vitePlugins } from './vite.plugins'
 
-console.log('process.env', process.env)
+console.debug('process.env', process.env)
 
 // https://vitejs.dev/config/
 const definedConfig = process.env.NUXT_ENV

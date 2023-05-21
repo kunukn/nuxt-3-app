@@ -12,5 +12,7 @@ module.exports = {
     parser: '@typescript-eslint/parser',
   },
   plugins: ['vitest'],
-  rules: {},
+  rules: {
+    'no-console': 'off',
+  },
 }
