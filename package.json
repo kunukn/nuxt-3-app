@@ -18,7 +18,7 @@
     "lintfix": "prettier --write --list-different . && yarn lint:js --fix",
     "test": "vitest",
     "predeploy": "npm run build-storybook",
-    "deploy-storybook": "gh-pages -d storybook-static"
+    "deploy-storybook": "cross-env NODE_DEBUG=gh-pages gh-pages -d storybook-static"
   },
   "dependencies": {
     "nuxt": "^3.5.2",
@@ -45,6 +45,7 @@
     "@vitejs/plugin-vue": "^4.2.3",
     "@vue/test-utils": "^2.3.2",
     "autoprefixer": "^10.4.14",
+    "cross-env": "^7.0.3",
     "eslint": "^8.41.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
