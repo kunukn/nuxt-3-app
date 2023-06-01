@@ -17,7 +17,6 @@
     "lint": "yarn lint:js && yarn lint:prettier",
     "lintfix": "prettier --write --list-different . && yarn lint:js --fix",
     "test": "vitest",
-    "predeploy": "yarn build-storybook",
     "deploy-storybook": "cross-env NODE_DEBUG=gh-pages gh-pages -d storybook-static"
   },
   "dependencies": {
