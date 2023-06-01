@@ -2,9 +2,9 @@
 
 The idea is to get a tech stack around **Vue 3** with the following requirements.
 
-- Framework: **Nuxt 3** with auto imports.
-- UI Library: **Vuetify** with customized settings and theming.
-- CSS library: **TailwindCSS**
+- Web Framework: **Nuxt 3** with auto imports.
+- UI Library: **Vuetify** with customized settings and theming for fast development.
+- CSS utility: **TailwindCSS**
 - Design system: **Storybook** that can load Nuxt 3 that uses auto imports and custom Vuetify theme and Tailwind.
 - Unit tests: **Vitest** for fast testing.
 
