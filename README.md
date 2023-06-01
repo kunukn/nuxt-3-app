@@ -10,6 +10,8 @@ The idea is to get a tech stack around **Vue 3** with the following requirements
 
 Due to possible CSS classnames conflict between Vuetify and Tailwind I have set Tailwind to have the classnames prefixed with `-`
 
+![about](readme/setup.png 'setup')
+
 
 
 ## Setup
