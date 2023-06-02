@@ -1,5 +1,5 @@
 <template>
-  <NuxtLayout name="full">
+  <NuxtLayout name="full-layout">
     <AppContent />
   </NuxtLayout>
 </template>

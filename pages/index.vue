@@ -1,5 +1,5 @@
 <template>
-  <NuxtLayout name="menu">
+  <NuxtLayout name="menu-layout">
     <NuxtLink to="/about" class="link"> Go to about </NuxtLink>
     <AppContent />
   </NuxtLayout>

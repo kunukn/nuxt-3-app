@@ -14,5 +14,6 @@ module.exports = {
   plugins: ['vitest'],
   rules: {
     'no-console': 'off',
+    'vue/v-on-event-hyphenation': 'off',
   },
 }

@@ -1,9 +1,10 @@
 <template>
-  <NuxtLayout name="full">
+  <NuxtLayout name="menu-layout">
     <div class="container">
       <NuxtLink to="/" class="link"> Back to home </NuxtLink>
       <h1>About</h1>
       <p>This is the about page</p>
+      <MyComponent />
     </div>
   </NuxtLayout>
 </template>

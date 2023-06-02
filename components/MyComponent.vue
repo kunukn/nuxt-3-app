@@ -1,9 +1,8 @@
 <template>
-  <div>
-    <p>This is an auto-imported component</p>
-    <p>Counter: {{ count }}</p>
+  <div class="-p-6">
+    <p class="-p-2">This is an auto-imported component</p>
     <v-btn @click="increment">Increment</v-btn>
-    <p>Counter: {{ getCount }}</p>
+    <p class="-p-2">Counter: {{ count }}</p>
   </div>
 </template>
 
@@ -16,9 +15,9 @@ export default defineComponent({
     const store = useCounterStore()
     const { increment } = store
 
-    const { count, getCount } = storeToRefs(store)
+    const { count } = storeToRefs(store)
 
-    return { increment, count, getCount }
+    return { increment, count }
   },
 })
 </script>
