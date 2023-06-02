@@ -13,10 +13,21 @@ Due to possible CSS classnames conflict between Vuetify and Tailwind I have set 
 ![about](readme/setup.png 'setup')
 
 
-Demo: It is deployed as a generated Nuxt 3 app here.
+### Nuxt Demo
+
+It is deployed as a generated Nuxt 3 app here.
 The deployed app might or might not be the latest from this repo.
 
 https://polite-wave-0d8d9f803.3.azurestaticapps.net
+
+
+### Storybook demo
+
+It is deployed as a build Storybook here.
+The deployed app might or might not be the latest from this repo.
+
+https://salmon-dune-05cd01103.3.azurestaticapps.net
+
 
 
 ## Setup
