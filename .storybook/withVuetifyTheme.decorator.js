@@ -16,7 +16,7 @@ export const withVuetifyTheme = (storyFn, context) => {
       // give themeName to StoryWrapper as a prop
       { themeName },
       {
-        story: () => h(story, { ...context.args }),
+        storySlot: () => h(story, { ...context.args }),
       }
     )
   }
