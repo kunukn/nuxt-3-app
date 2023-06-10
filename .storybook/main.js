@@ -6,6 +6,7 @@ const config = {
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
+    '@storybook/addon-mdx-gfm',
   ],
   core: {
     builder: '@storybook/builder-vite',
@@ -18,5 +19,4 @@ const config = {
     autodocs: 'tag',
   },
 }
-
 export default config
