@@ -1,4 +1,5 @@
 import { setup } from '@storybook/vue3'
+import { createI18n } from 'vue-i18n'
 import '@mdi/font/css/materialdesignicons.min.css'
 import 'vuetify/styles'
 import '../assets/css/tailwind.css'
@@ -9,6 +10,7 @@ import * as directives from 'vuetify/directives'
 import { withVuetifyTheme } from './withVuetifyTheme.decorator'
 import { themes } from '../configuration/vuetify-configuration'
 import '../assets/styles/global.scss'
+import en from '../internationalization/en.json'
 
 /** @type { import('@storybook/vue3').Preview } */
 const preview = {
@@ -33,9 +35,18 @@ const vuetify = createVuetify({
 
 const pinia = createPinia()
 
+const i18n = createI18n({
+  locale: 'en', // set locale
+  fallbackLocale: 'en', // set fallback locale
+  messages: {
+    en,
+  },
+})
+
 setup((app) => {
   app.use(vuetify)
   app.use(pinia)
+  app.use(i18n)
 })
 
 export const decorators = [withVuetifyTheme]

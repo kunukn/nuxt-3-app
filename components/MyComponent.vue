@@ -3,6 +3,7 @@
     <p class="-p-2">This is an auto-imported component</p>
     <v-btn @click="increment">Increment</v-btn>
     <p class="-p-2">Counter: {{ count }}</p>
+    <p class="-p-2">$t usage: {{ $t('{count} items', { count }) }}</p>
   </div>
 </template>
 
