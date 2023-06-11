@@ -10,6 +10,9 @@ const definedConfig = process.env.NUXT_ENV
       /* Nuxt detects vite.config.ts file, avoid using it. This is for Storybook. */
     }
   : defineConfig({
+      ssr: {
+        noExternal: true,
+      },
       plugins: [...vitePlugins],
       css: {
         // preprocessorOptions: {

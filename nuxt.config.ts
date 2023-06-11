@@ -1,3 +1,5 @@
+// https://github.com/vuetifyjs/vuetify-loader/issues/290
+
 import vuetify from 'vite-plugin-vuetify'
 import { createResolver } from '@nuxt/kit'
 
@@ -38,6 +40,24 @@ export default defineNuxtConfig({
     injectPosition: 'first',
     viewer: true,
   },
+
+  sourcemap: {
+    server: false,
+    client: false,
+  },
+
+  // vite: {
+  //   ssr: {
+  //     noExternal: ['vuetify'],
+  //   },
+  //   css: {
+  //     preprocessorOptions: {
+  //       scss: {
+  //         additionalData: `@use './settings.scss' as *;`,
+  //       },
+  //     },
+  //   },
+  // },
 
   hooks: {
     'vite:extendConfig': (config) => {

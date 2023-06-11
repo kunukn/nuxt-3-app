@@ -69,6 +69,7 @@
     "unplugin-auto-import": "^0.16.4",
     "unplugin-vue-components": "^0.25.1",
     "vite-plugin-vuetify": "^1.0.2",
+    "vite-tsconfig-paths": "^4.2.0",
     "vitest": "^0.32.0"
   }
 }

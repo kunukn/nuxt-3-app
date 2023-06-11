@@ -12,6 +12,10 @@ Due to possible CSS classnames conflict between Vuetify and Tailwind I have set 
 
 ![about](readme/setup.png 'setup')
 
+Because there seems to be no `nuxt/vuetify` or `nuxt/storybook` out of the box integration, the configuration is setup twice.
+
+The configuration setup in nuxt config is duplicated in other files as well. 
+
 
 ### Nuxt Demo
 
