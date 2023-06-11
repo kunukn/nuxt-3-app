@@ -51,3 +51,6 @@ jspm_packages/
 .nuxt-storybook
 storybook-static
 pages/temp.vue
+
+.init.ps1
+
