@@ -4101,14 +4101,6 @@
     "@vue/compiler-dom" "^3.0.1"
     "@vue/server-renderer" "^3.0.1"
 
-"@vuetify/loader-shared@^1.7.1":
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/@vuetify/loader-shared/-/loader-shared-1.7.1.tgz#0f63a3d41b6df29a2db1ff438aa1819b237c37a3"
-  integrity sha512-kLUvuAed6RCvkeeTNJzuy14pqnkur8lTuner7v7pNE/kVhPR97TuyXwBSBMR1cJeiLiOfu6SF5XlCYbXByEx1g==
-  dependencies:
-    find-cache-dir "^3.3.2"
-    upath "^2.0.1"
-
 "@vueuse/core@10.2.0":
   version "10.2.0"
   resolved "https://registry.yarnpkg.com/@vueuse/core/-/core-10.2.0.tgz#65cf5222bf0178ff5ddec20a113d7ca6c30481e1"
@@ -6877,7 +6869,7 @@ find-cache-dir@^2.0.0:
     make-dir "^2.0.0"
     pkg-dir "^3.0.0"
 
-find-cache-dir@^3.0.0, find-cache-dir@^3.3.1, find-cache-dir@^3.3.2:
+find-cache-dir@^3.0.0, find-cache-dir@^3.3.1:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/find-cache-dir/-/find-cache-dir-3.3.2.tgz#b30c5b6eff0730731aea9bbd9dbecbd80256d64b"
   integrity sha512-wXZV5emFEjrridIgED11OoUKLxiYjAcqot/NJdAkOhlJ+vGzwhOAfcG5OX1jP+S0PcjEn8bdMJv+g2jwQ3Onig==
@@ -13175,11 +13167,6 @@ untyped@^1.3.2:
     mri "^1.2.0"
     scule "^1.0.0"
 
-upath@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/upath/-/upath-2.0.1.tgz#50c73dea68d6f6b990f51d279ce6081665d61a8b"
-  integrity sha512-1uEe95xksV1O0CYKXo8vQvN1JEbtJp7lb7C5U9HMsIp6IVwntkH/oNUzyVNQSd4S1sYk2FpSSW44FqMc8qee5w==
-
 update-browserslist-db@^1.0.10:
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/update-browserslist-db/-/update-browserslist-db-1.0.11.tgz#9a2a641ad2907ae7b3616506f4b977851db5b940"
@@ -13350,15 +13337,6 @@ vite-plugin-vue-inspector@^3.4.2:
     kolorist "^1.7.0"
     magic-string "^0.30.0"
     shell-quote "^1.8.0"
-
-vite-plugin-vuetify@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/vite-plugin-vuetify/-/vite-plugin-vuetify-1.0.2.tgz#d1777c63aa1b3a308756461b3d0299fd101ee8f4"
-  integrity sha512-MubIcKD33O8wtgQXlbEXE7ccTEpHZ8nPpe77y9Wy3my2MWw/PgehP9VqTp92BLqr0R1dSL970Lynvisx3UxBFw==
-  dependencies:
-    "@vuetify/loader-shared" "^1.7.1"
-    debug "^4.3.3"
-    upath "^2.0.1"
 
 vite-tsconfig-paths@^4.2.0:
   version "4.2.0"
@@ -13581,11 +13559,6 @@ vue@^3.3.4:
     "@vue/runtime-dom" "3.3.4"
     "@vue/server-renderer" "3.3.4"
     "@vue/shared" "3.3.4"
-
-vuetify@^3.3.3:
-  version "3.3.3"
-  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-3.3.3.tgz#82904abbed936abaf775b8394b0d094d4b56cbc7"
-  integrity sha512-oLpm6L6Zvf4b7Ua8V3INnUkGoxbi04O68ymEbBDLrPFzmIkzAcwd9L/2Ega582PRJnjTBBZapa6KdmosvhVvgA==
 
 wait-on@^7.0.1:
   version "7.0.1"

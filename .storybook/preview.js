@@ -1,14 +1,9 @@
 import { setup } from '@storybook/vue3'
 import { createI18n } from 'vue-i18n'
 import '@mdi/font/css/materialdesignicons.min.css'
-import 'vuetify/styles'
 import '../assets/css/tailwind.css'
-import { createVuetify } from 'vuetify'
 import { createPinia } from 'pinia'
-import * as components from 'vuetify/components'
-import * as directives from 'vuetify/directives'
-import { withVuetifyTheme } from './withVuetifyTheme.decorator'
-import { themes } from '../configuration/vuetify-configuration'
+import { withTheme } from './withTheme.decorator'
 import '../assets/styles/global.scss'
 import en from '../internationalization/en.json'
 
@@ -25,14 +20,6 @@ const preview = {
   },
 }
 
-const vuetify = createVuetify({
-  components,
-  directives,
-  theme: {
-    themes,
-  },
-})
-
 const pinia = createPinia()
 
 const i18n = createI18n({
@@ -44,12 +31,11 @@ const i18n = createI18n({
 })
 
 setup((app) => {
-  app.use(vuetify)
   app.use(pinia)
   app.use(i18n)
 })
 
-export const decorators = [withVuetifyTheme]
+export const decorators = [withTheme]
 
 export const globalTypes = {
   theme: {

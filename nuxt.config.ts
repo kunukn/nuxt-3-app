@@ -1,10 +1,8 @@
-// https://github.com/vuetifyjs/vuetify-loader/issues/290
-
-import vuetify from 'vite-plugin-vuetify'
 import { createResolver } from '@nuxt/kit'
 
 process.env.NUXT_ENV = 'true' // used as a flag to avoid using the vite.config.ts file.
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const { resolve } = createResolver(import.meta.url)
 
 export default defineNuxtConfig({
@@ -12,7 +10,6 @@ export default defineNuxtConfig({
   env: {},
 
   css: [
-    'vuetify/lib/styles/main.sass', // instead of: import 'vuetify/styles'
     '@mdi/font/css/materialdesignicons.min.css',
     '~/assets/styles/global.scss',
   ],
@@ -25,7 +22,7 @@ export default defineNuxtConfig({
   ],
 
   build: {
-    transpile: ['vuetify'],
+    transpile: [],
   },
 
   // https://tailwindcss.nuxtjs.org/getting-started/options
@@ -46,28 +43,8 @@ export default defineNuxtConfig({
     client: false,
   },
 
-  // vite: {
-  //   ssr: {
-  //     noExternal: ['vuetify'],
-  //   },
-  //   css: {
-  //     preprocessorOptions: {
-  //       scss: {
-  //         additionalData: `@use './settings.scss' as *;`,
-  //       },
-  //     },
-  //   },
-  // },
-
   hooks: {
-    'vite:extendConfig': (config) => {
-      // @ts-ignore
-      config.plugins.push(
-        vuetify({
-          styles: { configFile: resolve('./settings.scss') },
-        })
-      )
-    },
+    'vite:extendConfig': (_config) => {},
   },
 
   i18n: {

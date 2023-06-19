@@ -1,7 +1,7 @@
 <template>
   <div class="-p-6">
     <p class="-p-2">This is an auto-imported component</p>
-    <v-btn @click="increment">Increment</v-btn>
+    <button @click="increment">Increment</button>
     <p class="-p-2">Counter: {{ count }}</p>
     <p class="-p-2">$t usage: {{ $t('{count} items', { count }) }}</p>
   </div>

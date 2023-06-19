@@ -1,11 +1,9 @@
-// https://storybook.js.org/recipes/vuetify
-
 import { h } from 'vue'
 import StoryWrapper from './StoryWrapper.vue'
 
 export const DEFAULT_THEME = 'light'
 
-export const withVuetifyTheme = (storyFn, context) => {
+export const withTheme = (storyFn, context) => {
   // Pull our global theme variable, fallback to DEFAULT_THEME
   const themeName = context.globals.theme || DEFAULT_THEME
   const story = storyFn()
