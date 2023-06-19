@@ -1,19 +1,20 @@
 <template>
-  <v-btn
+  <button
     type="button"
     color="primary"
-    @click="onClick"
     :variant="variant"
     :size="size"
-    >{{ label }}</v-btn
+    @click="onClick"
   >
+    {{ label }}
+  </button>
 </template>
 
 <script>
 import { reactive, computed } from 'vue'
 
 export default {
-  name: 'my-button',
+  name: 'MyButton',
 
   props: {
     label: {
@@ -27,11 +28,13 @@ export default {
     size: {
       type: String,
       validator: function (value) {
-        return ['small', 'large'].indexOf(value) !== -1
+        return ['small', 'large'].includes(value)
       },
+      default: 'small',
     },
     backgroundColor: {
       type: String,
+      default: '',
     },
   },
 
