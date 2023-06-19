@@ -1,6 +1,6 @@
 <template>
   <NuxtLayout name="menu-layout">
-    <div class="container">
+    <div class="about-container">
       <NuxtLink to="/" class="link"> Back to home </NuxtLink>
       <h1>About</h1>
       <p>This is the about page</p>

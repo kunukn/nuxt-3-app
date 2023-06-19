@@ -1,5 +1,5 @@
 module.exports = {
-  prefix: '-',
+  prefix: '',
   mode: 'jit',
   content: [
     './stories/**/*.{js,vue,ts}',
