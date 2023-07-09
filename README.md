@@ -1,18 +1,15 @@
-# Nuxt 3 + Vuetify customized + Tailwind + Storybook
+# Nuxt 3 + Tailwind + Storybook
 
 The idea is to get a tech stack around **Vue 3** with the following requirements.
 
 - Web Framework: **Nuxt 3** with auto imports.
-- UI Library: **Vuetify** with customized settings and theming for fast development.
 - CSS utility: **TailwindCSS**
-- Design system: **Storybook** that can load Nuxt 3 that uses auto imports and custom Vuetify theme and Tailwind.
+- Design system: **Storybook** that can load Nuxt 3 that uses auto imports and Tailwind.
 - Unit tests: **Vitest** for fast testing.
-
-Due to possible CSS classnames conflict between Vuetify and Tailwind I have set Tailwind to have the classnames prefixed with `-`
 
 ![about](readme/setup.svg 'setup')
 
-Because there seems to be no `nuxt/vuetify` or `nuxt/storybook` out of the box integration, the configuration is setup twice.
+Because there seems to be no `nuxt/storybook` out of the box integration, the configuration is setup twice.
 
 The configuration setup in nuxt config is duplicated in other files as well. 
 
