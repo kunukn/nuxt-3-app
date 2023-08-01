@@ -11,12 +11,12 @@
     "postinstall": "nuxt prepare",
     "story": "storybook dev -p 6009",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build && node post-storybook-build.js",
     "lint:js": "eslint --ext \".ts,.vue\" --ignore-path .gitignore .",
     "lint:prettier": "prettier --check .",
     "lint": "yarn lint:js && yarn lint:prettier",
     "lintfix": "prettier --write --list-different . && yarn lint:js --fix",
     "test": "vitest",
+    "build-storybook": "storybook build && node post-storybook-build.js",
     "deploy-storybook": "cross-env NODE_DEBUG=gh-pages gh-pages -d ./storybook-static -t true"
   },
   "dependencies": {
