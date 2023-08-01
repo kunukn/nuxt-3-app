@@ -14,10 +14,11 @@ Because there seems to be no `nuxt/storybook` out of the box integration, the co
 The configuration setup in nuxt config is duplicated in other files as well. 
 
 
-#### Must have libraries
+## Must have libraries and features
 
 * vue-i18n
 * pinia
+* component auto imports 
 
 ### Storybook demo
 

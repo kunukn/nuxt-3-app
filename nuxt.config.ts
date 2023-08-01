@@ -1,3 +1,6 @@
+import path from 'path'
+import fs from 'fs'
+
 import { createResolver } from '@nuxt/kit'
 
 process.env.NUXT_ENV = 'true' // used as a flag to avoid using the vite.config.ts file.
@@ -8,6 +11,19 @@ const { resolve } = createResolver(import.meta.url)
 export default defineNuxtConfig({
   runtimeConfig: {},
   env: {},
+
+  server:
+    process.env.NUXT_ENV_IS_LOCALHOST_HTTPS === '1'
+      ? {
+          // https://web.dev/how-to-use-local-https/#setup
+          // https://stackoverflow.com/a/68116442/815507
+          // https://github.com/FiloSottile/mkcert
+          https: {
+            key: fs.readFileSync(path.resolve(__dirname, 'localhost-key.pem')),
+            cert: fs.readFileSync(path.resolve(__dirname, 'localhost.pem')),
+          },
+        }
+      : {},
 
   css: [
     '@mdi/font/css/materialdesignicons.min.css',
