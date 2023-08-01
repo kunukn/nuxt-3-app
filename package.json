@@ -5,7 +5,7 @@
   "homepage": "https://kunukn.github.io/nuxt-3-app",
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev --port 8088 -o",
+    "dev": "cross-env NODE_TLS_REJECT_UNAUTHORIZED=0 nuxt dev --port 8088 --https --ssl-cert localhost.pem --ssl-key localhost-key.pem -o",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
